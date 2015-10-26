@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<site>
+	<content>
+			<section id="1" section="Projects">
+
+			<project id="34" info="IBM" client="IBM - Tasty Data" agency="Agency: Ogilvy New York" image="images/commercials/IBM_Tasty_Data.jpg" video="40307007" wide="yes" />
+
+			<project id="33" info="LINCOLN MKS" client="LINCOLN - MKS" agency="Agency: TEAM DETROIT / DIR: LANCE ACORD" image="images/commercials/Lincoln_MKS.jpg" video="video/Lincoln_MKS.mp4" wide="yes"/>
+
+			<project id="32" info="JAGUAR" client="Jaguar - Machines" agency="Agency: SPARK44 / Dir: Marco Brambilla" image="images/commercials/Jaguar_Machines_01.jpg" video="38186362" wide="yes"/>
+			
+			<project id="31" info="TOYOTA" client="TOYOTA - Brilliant Thinking" agency="Agency: Saatchi &amp; Saatchi" image="images/commercials/TOYOTA_Launch_Dircut.jpg" video="30341740" wide="yes"/>
+			
+			<project id="29" info="LINCOLN SPRING" client="LINCOLN / MKZ" agency="AGENCY:  Team Detroit / TheLab" image="images/commercials/Lincoln_MKZ_Spring.jpg" video="video/Lincoln_MKZ_Spring.mp4" wide="yes"/>
+			
+			<project id="2" info="MUSE MAGAZINE" client="GHOST / MUSE MAGAZINE" agency="Marco Brambilla / STINK UK" image="images/commercials/Artjail_Still_Natasha03.jpg" video="14038048" wide="yes"/>
+			
+			<project id="0" info="RBC" client="RBC" agency="AGENCY: BBDO / TORONTO" image="images/commercials/RBC_still_01.jpg" video="14042925" wide="yes"/>
+			
+			<project id="20" info="KANYE WEST" client="POWER (DIRECTORS CUT)" agency="Marco Brambilla / STINK UK" image="images/commercials/power_diandra.jpg" video="13947776" wide="yes"/>
+			
+			<project id="30" info="CARAMILK" client="Caramilk Secrets" agency="Agency:  The Hive" image="images/commercials/Caramilk_Secrets.jpg" video="20847317" wide="yes"/>
+			
+			<project id="27" info="MENTOS" client="MENTOS" agency="Agency:  MARTIN AGENCY" image="images/commercials/Mentos_Blade.jpg" video="20847930" wide="yes"/>
+			
+			<project id="24" info="LINCOLN" client="LINCOLN | MKT - THOUGHT" agency="AGENCY:  Team Detroit / TheLab" image="images/commercials/Lincoln_MKT_Thought.jpg" video="video/Lincoln_MKT_Thought.mp4" wide="yes"/>
+			
+			<project id="25" info="MITSUBISHI" client="MITSUBISHI - EDGE" agency="AGENCY:  BBDO Toronto" image="images/commercials/Mitsubishi_Edge.jpg" video="26517771" wide="yes"/>
+			
+			<project id="1" info="Cadillac" client="GM" agency="AGENCY: BBH NY / THELAB NY" image="images/commercials/Cadillac_CTS-V.jpg" video="14039260" wide="yes"/>
+			
+			<project id="19" info="FLASHBACK" client="Marco Brambilla" agency="AGENCY: Six Scents" image="images/commercials/flashback.jpg" video="14038475" wide="yes"/>
+			
+			<project id="3" info="Coalition for the Homeless" client="COALITION FOR THE HOMELESS - LENGTH OF MANHATTAN" agency="AGENCY: EURO RSCG / NEW YORK" image="images/commercials/Artjail_Still_Coalition.jpg" video="14182952" wide="yes"/>
+
+			<project id="4" info="Army" client="US ARMY - WHERE CAN" agency="AGENCY: MCCANN ERICKSON / NEW YORK" image="images/commercials/army.jpg" video="26519564" wide="yes"/>
+
+			<project id="5" info="Audi" client="AUDI - R8 TUNNEL" agency="AGENCY: LOWE ROCHE / TORONTO" image="images/commercials/audi.jpg" video="video/Audi_Tunnel.mp4" wide="yes"/> 
+
+			<project id="6" info="Nissan Grown Up" client="NISSAN" agency="AGENCY: TBWA / TORONTO" image="images/commercials/nissan_grownup.jpg" video="26814012" wide="yes"/>
+
+			<project id="7" info="Levis" client="LEVIS STRAUSS" agency="AGENCY: CUTWATER / SF" image="images/commercials/levis.jpg" video="26519130" wide="no"/>
+
+			<project id="8" info="Pepsi" client="PEPSI" agency="AGENCY: BBDO / NY" image="images/commercials/pepsi.jpg" video="video/Pepsi-SNL_MacGruber.mp4" wide="yes"/>
+
+			<project id="9" info="Jaguar CXF" client="Jaguar" agency="AGENCY: EURO RSCG / NY" image="images/commercials/jaguar_cfx.jpg" video="26497776" wide="yes"/>
+				
+			<project id="11" info="NIKE" client="NIKE - BASKETBALL" agency="Nike" image="images/commercials/nike.jpg" video="video/Nike_Flow.mp4" wide="no"/>
+
+			<project id="12" info="GOOGLE CHROME" client="GOOGLE - DEFENDERS IN TIGHTS" agency="AGENCY: GOOGLE CREATIVE LAB" image="images/commercials/google_chrome.jpg" video="14063454" wide="yes"/>
+			
+			<project id="13" info="PS3" client="PS3 - SWALLOWED" agency="SONY" image="images/commercials/ps3.jpg" video="26814313" wide="no"/>
+
+			<project id="14" info="TRIDENT" client="Cadbury Adams" agency="AGENCY: JWT / NY" image="images/commercials/trident.jpg" video="video/Trident_Giant_Tooth.mp4" wide="no"/>
+			
+			<project id="15" info="MOBILE" client="Dusting Down The Stars" agency="Universal Music Group" image="images/commercials/Artjail_Still_Mobile01.jpg" video="video/Mobile_Master.mp4" wide="no"/>
+
+			<project id="16" info="JAGUAR HERITAGE" client="JAGUAR" agency="AGENCY: EURO RSCG / NY" image="images/commercials/jaguar_heritage.jpg" video="video/Jaguar_Heritage.mp4" wide="no"/>
+
+			<project id="17" info="Jackson Triggs" client="JACKSON TRIGGS" agency="AGENCY: BOS / TORONTO" image="images/commercials/jackson_triggs.jpg" video="26512891" wide="no"/>
+
+			<project id="18" info="WILLOWZ" client="WALK STRAIGHT" agency="SYMPATHY FOR THE RECORD INDUSTRY" image="images/commercials/willowz.jpg" video="video/Willowz.mp4" wide="no"/>  
+
+	</section>
+
+
+		<section id="4" section="Contact">
+		<contact>
+			<title>Leslie McCartney</title>
+			
+			<name>Executive Producer</name>	
+			
+			<email><a href="mailto:leslie@artjail.com">leslie@artjail.com</a></email>
+			
+			<address>50 Eldridge Street 6th Floor New York, NY 10002</address>
+			
+			<phone>phone  646.666.8550</phone>
+			
+			<fax>fax  646.964.6634</fax>
+			
+			<name2>Steve Mottershead</name2>
+			
+			<title2>Creative Director/ Founder</title2>
+			
+			<email2><a href="mailto:steve@artjail.com">steve@artjail.com</a></email2>
+			
+			#<name3></name3>
+			
+			#<title3></title3>
+			
+			#<email3></email3>
+			
+			#<name4></name4>
+			
+			#<title4></title4>
+			
+			#<phone2></phone2>
+			
+			#<email4></email4>
+		</contact>
+		</section>
+
+		<count> 139 </count>  <!-- UPDATE THIS VALUE FOR THE BACKGROUND IMAGE SLIDER. THIS IS THE AMOUNT OF FRAMES IN THE ANIMATION -->
+		
+		<about>ARTJAIL IS A VISUAL EFFECTS BOUTIQUE AND ART SPACE RESIDING IN CHINATOWN NYC.</about>
+		
+	</content>	
+</site>
+

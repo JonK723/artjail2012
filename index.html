@@ -1,0 +1,444 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="cache-control" content="public">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="keywords" content="VFX, ART, 3D, ANIMATION, LEVIS, LINCOLN, ARMY, TOYOTA, MUSE, RBC, KANYE WEST, MENTOS, CARAMILK, FLASHBACK, AUDI,PEPSI, PS3, NIKE, NYC, LES, CHROME, GOOGLE" />
+
+  <title>ARTJAIL</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+  <script>
+	<!--
+
+	var metas = document.getElementsByTagName('meta');
+	var i;
+
+	function gestureStart() {
+		for (i=0; i<metas.length; i++) {
+			if (metas[i].name == "viewport") {
+			metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+			}
+		}
+	}
+
+	if ( (navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i)) || (navigator.userAgent.match(/IEMobile/i)) || (screen.width <= 599) ) {
+	   window.location = "http://cargocollective.com/artjailvfx";
+	}
+	else if (navigator.userAgent.match(/iPad/i)) {
+
+		for (i=0; i<metas.length; i++) {
+			if (metas[i].name == "viewport") {
+			metas[i].content = "width=device-width, minimum-scale=1.0, maximum-scale=1.0";
+			}
+		}
+
+		document.getElementsByTagName('body')[0].addEventListener("gesturestart", gestureStart, false);
+	}
+
+
+	var url = "http://player.vimeo.com/video/40307007?api=1;byline=0&amp;amp;portrait=0;"; // set the url to the first video in the list so the player has something to recognize
+
+	var isFinishedLoading = false;
+
+
+	/* Set up the envents for the play */
+	function onReady() {
+		post('pause');
+		console.log("Player Ready!");
+	}
+
+	// Handle messages received from the player
+	function onMessageReceived(e) {
+		var data = JSON.parse(e.data);
+
+		switch (data.event) {
+			case 'ready':
+				onReady();
+				break;
+		}
+	}
+
+	// Helper function for sending a message to the player
+	function post(action) {
+		var data = { method: action };
+
+		$('iframe')[0].contentWindow.postMessage(JSON.stringify(data), url);
+	}
+
+	function initListener()
+	{
+		// Listen for messages from the player
+		if (window.addEventListener){
+			window.addEventListener('message', onMessageReceived, false);
+		}
+		else {
+			window.attachEvent('onmessage', onMessageReceived, false);
+		}
+	}
+	-->
+</script>
+
+  <script>
+	function isCanvasSupported(){
+		var elem = document.createElement('canvas');
+		return !!(elem.getContext && elem.getContext('2d'));
+	}
+  </script>
+
+</head>
+
+
+<body onLoad="initListener(); if(isFinishedLoading == true) { $('#loading').remove(); }">
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+    <a href="index.html" class="logo" style="display:block;"> </a>
+
+    <div id="loading" style="position:absolute; width:100%; height:100%; top:0; left:0; background-color:#000; overflow-x:hidden; overflow-y:hidden; z-index:1000;">
+        <div id="floatingBarsG">
+        <div class="blockG" id="rotateG_01">
+        </div>
+        <div class="blockG" id="rotateG_02">
+        </div>
+        <div class="blockG" id="rotateG_03">
+        </div>
+        <div class="blockG" id="rotateG_04">
+        </div>
+        <div class="blockG" id="rotateG_05">
+        </div>
+        <div class="blockG" id="rotateG_06">
+        </div>
+        <div class="blockG" id="rotateG_07">
+        </div>
+        <div class="blockG" id="rotateG_08">
+        </div>
+        </div>
+    </div>
+
+    <div id="container" style="height:100%; border:1px #0FF;">
+
+        <div id="contentBox" class="halfCover">
+
+            <div id="videoBox">
+            	<div class="embed-container">
+                <iframe id="projVideo" src="http://player.vimeo.com/video/40307007?api=1;byline=0&amp;amp;portrait=0;" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        		</div>
+                <div id="projTitle"> </div>
+
+                <div id="closeContent" class="closeLinks" style="position:relative; float:left; top:2em; left:4em; width:50px; height:50px; background-size:50px 50px;">
+
+                </div>
+            </div>
+
+            <div id="spotControls">
+                <div class="spotLink"></div>
+                <br/>
+                <div id="closeContent" class="closeLinks"></div>
+                <br /> <br/>
+                <div class="mediumWhiteText" style="position:relative; left:-0.5em; top:-1.0em; width:8em; z-index:600;"> <a id="prevLink" class="mediumWhiteText" style="z-index:200; display:inline-block; width:40px; height:25px; margin-right:1em;">prev</a>/<a id="nextLink" class="mediumWhiteText" style="z-index:200; display:inline-block; width:40px; height:25px; margin-left:1.5em;">next</a></div>
+            </div>
+
+        </div> <!-- close contentBox -->
+
+        <div id="fullDetails" class="halfCoverRight">
+            <pre id="extraStuff" style="font-family:FeaturedItem;">
+                <!-- Agency / Olgilvy NY
+                 Pro Co / Park Pictures
+                 Director / Terri Timely
+                 Editor / Some Dude
+                 Lead Flame / Steve Mottershead
+                 Flame / Elsa Tu, Chris Memoli
+                 CG Artist / Ruoyu Li, Brendan Dude
+                 Artjail EP / Leslie McCartney -->
+            </pre>
+        </div>
+	</div>
+
+          <div id="bingMap" class="mapCover"> </div>
+
+          <div id="mapInfoBox" class="mapInfo">
+            <a href="http://maps.google.com/maps?q=50+ELDERIDGE+STREET+6TH+FLOOR+&hl=en&sll=37.0625,-95.677068&sspn=44.25371,93.076172&t=h&hnear=50+Eldridge+St,+Manhattan,+New+York+10002&z=16" target="_blank" title="Link to Google Maps">
+            50 ELDRIDGE STREET 6TH FLOOR
+            <br/>
+            NEW YORK, NY 10002</a>
+            <br/>
+            <p></p>
+            PHONE   646.666.8550
+            <br/>
+            FAX   646.964.6634
+            <br/>
+            <p></p>
+            BETWEEN HESTER AND CANAL CLOSE TO THE
+            <br />
+            GRAND STREET B,D AND THE EAST BROADWAY F
+            <br />
+            <br />
+            CLICK MAP TO CLOSE
+          </div>
+
+          <div id="infoLink" class="mainLinks">
+
+            <div id="links">
+            <a id="about">ABOUT</a>
+            <div class="aboutText" id="abtTxt">
+                <!-- ARTJAIL IS A VISUAL EFFECTS BOUTIQUE AND ART SPACE RESIDING ON THE AMORPHOUS BORDER OF CHINATOWN AND THE L.E.S. NYC. -->
+            </div>
+            <br />
+            <a id="contact">CONTACT</a>
+            <div class="contactText">
+                <div id="title1" style="position:relative;"></div>
+                <div id="name1" style="position:relative;"></div>
+                <div id="email" style="position:relative;"></div>
+                <br/>
+                <div id="address" style="position:relative; width:12em;"></div>
+                <br/>
+                <div id="phone" style="position:relative;"></div>
+                <div id="fax" style="position:relative;"></div>
+
+                <div id="name2" style="position:absolute; top:9%; left:28%;"></div>
+                <div id="title2" style="position:absolute; top:18%; left:28%;"></div>
+                <div id="email2" style="position:absolute; top:26%; left:28%;"></div>
+                <div id="social1" style="position:absolute; top:62%; left:28%;"><a href="https://www.facebook.com/profile.php?id=100000374567176" target="_blank" style="cursor:auto;"><img src="images/facebook.png" alt="Facebook" /></a></div>
+                <div id="social2" style="position:absolute; top:62%; left:33%;"><a href="https://www.twitter.com/#!/Artjail" target="_blank" style="cursor:auto;"><img src="images/twitter.png" alt="Twitter" /></a></div>
+
+            </div>
+            <br />
+            <a id="directLink">DIRECTIONS</a>
+            <br />
+            <a href="http://artjail.tumblr.com/" target="_blank" id="blog">TUMBLR</a>
+
+            <div id="projectLink">
+                <a id="project">PROJECTS</a>
+                <div id="projectList"> </div>
+            </div>
+             <br />
+          </div>
+	  </div>
+
+    <div id="disclaimer" style="position:absolute; left:3%; top:98%; color:#999; font-size:10px; font-weight:bold; x-overflow:none;">
+      <script>
+  		  if(!isCanvasSupported())
+  		  {
+          	document.write("This website requires an HTML 5 compatable browser. Please update your browser.");
+  		  }
+  		</script>
+    </div>
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <!-- scripts concatenated and minified via build script -->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/html5Preloader.js"></script>
+  <script src="js/jquery.tinyscrollbar.min.js"></script>
+<!-- end scripts -->
+
+
+  <script>
+
+  	var MAX_IMAGES = new Number();
+	var imgSeq = new Array();
+	var imgIDX;
+	var myLoader = html5Preloader();
+	var lastSelectedProj = null;
+	var nextSelectedProj = null;
+	var f = $('iframe');
+	var bgChange = true;
+
+    $(document).ready(function() {
+
+			loadProjects('artjail.xml');
+
+			myLoader.addFiles('images/WEBSITE_DIRECTIONS.svg');
+			myLoader.addFiles('images/circle.png');
+			myLoader.addFiles('images/circle_hover.png');
+			myLoader.addFiles('images/close.png');
+			myLoader.addFiles('images/close_hover.png');
+
+			$(document).mousemove(function(e){
+
+				if(bgChange == true) {
+					pageWidth = $(window).width(); // get the width of the window
+
+					mouseXPos = e.pageX; // get the horizontal position of the mouse cursor
+
+
+					imgIDX = Math.floor(scaleRange(mouseXPos, 0, pageWidth, 0, MAX_IMAGES));
+
+
+					if(imgIDX >= MAX_IMAGES)
+					{
+						imgIDX = MAX_IMAGES-1;
+					}
+				}
+
+				$("html").css("background-image", 'url(' + imgSeq[imgIDX] + ')', "background-position", "no-repeat center center fixed");
+				$("html").addClass("fullCover");
+			});
+
+
+		$("#project").click(function() {
+
+			if($("#projectList").is(":hidden")) {
+				$(".contactText").hide();
+				$(".aboutText").hide();
+				$("#contentBox").hide();
+				$('#fullDetails').hide();
+				$("#bingMap").hide();
+				$("#projectList").slideDown(300);
+			}
+			else {
+				$("#projectList").hide();
+			}
+		});
+
+		/*
+		show or hide the about text
+		*/
+		$("#about").click(function() {
+
+			if($(".aboutText").is(":hidden")) {
+				$(".contactText").hide();
+				$("#projectList").hide();
+				$("#contentBox").hide();
+				$('#fullDetails').hide();
+				$("#bingMap").hide();
+				$(".aboutText").slideDown(300);
+			}
+			else {
+
+				$(".aboutText").hide();
+			}
+		});
+
+
+		$("#contact").click(function() {
+			if($(".contactText").is(":hidden")) {
+				$(".aboutText").hide();
+				$("#projectList").hide();
+				$("#contentBox").hide();
+				$('#fullDetails').hide();
+				$("#bingMap").hide();
+				$(".contactText").slideDown(300);
+			}
+			else {
+				$(".contactText").hide();
+			}
+		});
+
+		$("#directLink").click(function() {
+			if($("#bingMap").is(":hidden")) {
+				$(".aboutText").hide();
+				$("#projectList").hide();
+				$(".contactText").hide();
+				$("#contentBox").hide();
+				$("#about").hide();
+				$("#contact").hide();
+				$("#directLink").hide();
+				$("#blog").hide();
+				$("#projectLink").hide();
+				$('#fullDetails').hide();
+
+				$("#bingMap").show();
+				$("#mapInfoBox").show();
+			}
+			else {
+				$("#bingMap").hide();
+				$("#mapInfoBox").hide();
+			}
+		});
+
+		$(".closeLinks").click(function() {
+			$("#links").show();
+			$("#contentBox").removeClass("greyCover");
+			$("#contentBox").hide();
+			$('#fullDetails').hide();
+			$("#projVideo").hide();
+			$("#projVideo").attr("src", "");
+
+			bgChange = true;
+
+			url = $('iframe').attr('src').split('?')[0];
+
+			post("unload");
+
+			url = "";
+			$("source").remove();
+		});
+
+
+		$(".spotLink").click(function() {
+			$("#contentBox").removeClass("halfCover");
+			$("#contentBox").addClass("greyCover");
+			$("#contentBox").css("background-image", "none");
+			$("#spotControls").hide();
+
+			bgChange = false;
+
+			var title = projClient + "<br/>" + projAgency;
+
+			$("#projTitle").html(title);
+
+			url = $('iframe').attr('src').split('?')[0];
+
+			$("#projVideo").show();
+			$("#videoBox").show();
+			setTimeout("post('play')", 300);
+
+		});
+
+		$("#bingMap").click(function() {
+			$(this).fadeOut();
+			$("#about").show();
+			$("#contact").show();
+			$("#directLink").show();
+			$("#blog").show();
+			$("#projectLink").show();
+			$("#mapInfoBox").hide();
+		});
+
+		$("#prevLink").click(function () {
+			if($(lastSelectedProj).is("#projItem")) {
+				var lastLink = $(lastSelectedProj).find('a:first');
+
+				retrieveContent(lastLink);
+			}
+		});
+
+		$("#nextLink").click(function () {
+			if($(nextSelectedProj).is("#projItem")) {
+				var nextLink = $(nextSelectedProj).find('a:first');
+				retrieveContent(nextLink);
+			}
+		});
+
+		if(isFinishedLoading == true)
+		{
+			myLoader.on('finish', function(){ console.log('All assets loaded.'); });
+		}
+  });
+
+  </script>
+
+</body>
+</html>
